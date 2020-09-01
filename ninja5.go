@@ -37,6 +37,6 @@ func main() {
 		for i, f := range v.flavor {
 			fmt.Println(i, f)
 		}
-		fmt.Println("-------------")
+		fmt.Println("*************")
 	}
 }
