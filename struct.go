@@ -14,6 +14,25 @@ type student struct {
 	rollnum int
 }
 
+func (s student) hello() {
+	fmt.Println("I am", s.first, s.last)
+}
+
+func (a student) alive() {
+	fmt.Println("I", a.first, a.last, "am a student")
+}
+func (b person) alive() {
+	fmt.Println("I", b.first, b.last, "am a person")
+}
+
+type living interface {
+	alive()
+}
+
+func bar(l living) {
+	fmt.Println("bar called living", l)
+}
+
 func main() {
 	p1 := person{
 		first: "AD",
@@ -39,5 +58,11 @@ func main() {
 
 	fmt.Println(s1)
 	fmt.Printf("%v\t%v\t%v\n", s1.first, s1.age, s1.rollnum)
-
+	fmt.Println("*************")
+	s1.hello()
+	s1.alive()
+	p1.alive()
+	bar(s1)
+	bar(p1)
+	bar(p2)
 }
