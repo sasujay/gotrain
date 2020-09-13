@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+    <form>
+        <h2>Register</h2>
+        <p>
+            <label for="fn">First Name:</label>
+            <input id="fn" type="text" placeholder="John" required>
+            <label for="ln">Last Name:</label>
+            <input id="ln" type=" text" placeholder="Smith" required>
+        </p>
+        <p>
+            <label for="m">Male:</label>
+            <input name="gender" id="m" type="radio" value="male">
+            <label for="f">Female:</label>
+            <input name="gender" id="f" type="radio" value="female">
+            <label for="o">Other:</label>
+            <input name="gender" id="o" type="radio" value="other">
+        </p>
+        <p>
+            <label for="em">Email:</label>
+            <input id="em" type="email" placeholder="your email" required>
+            <label for="ps">Password:</label>
+            <input id="ps" type="password" placeholder="your password" minlength="8">
+        </p>
+        <p>
+            <label for="em">Birthday:</label>
+            <select>
+                <option name="month">Month</option>
+                <option name="month">Jan</option>
+                <option name="month">Feb</option>
+            </select>
+            <select>
+                <option name="day">Day</option>
+                <option name="day">1</option>
+                <option name="day">2</option>
+                <option name="day">3</option>
+                <option name="day">4</option>
+            </select>
+            <select>
+                <option value="year">Year</option>
+                <option value="year">2020</option>
+                <option value="year">2019</option>
+                <option value="year">2018</option>
+            </select>
+        </p>
+        <p>
+            <label>I agree to the terms and conditions </label>
+            <input type="checkbox">
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
